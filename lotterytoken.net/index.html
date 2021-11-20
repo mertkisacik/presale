@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+<meta charset="utf-8">
+<title>LotteryToken</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<meta property="og:url" content="https://lotterytoken.net" />
+<meta property="og:title" content="Just hold to have a chance to win the Lottery!" />
+<meta property="og:description" content="Our Lottery Pool fills with a 2% Fee per Transaction! No need to risk your LOT, just hold and if you're lucky you receive the next Pot which is 0.2% of the total supply!" />
+<meta property="og:image" content="https://s18.directupload.net/images/210330/24z87g6k.png" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://s18.directupload.net/images/210330/24z87g6k.png" />
+<meta name="twitter:description" content="Our Lottery Pool fills with a 2% Fee per Transaction! No need to risk your LOT, just hold and if you're lucky you receive the next Pot which is 0.2% of the total supply!" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/main%EF%B9%96v=2.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+<link rel="stylesheet" href="css/_after%EF%B9%96v=2.css">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/engine%EF%B9%96v=6.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H85XSYBRZB"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-H85XSYBRZB');
+    </script>
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<script async src='cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<body id="top">
+<header id="header" class="fixed-top">
+<div class="container header-content">
+<nav class="navbar">
+<a class="navbar-brand" href="#">
+<img src="images/logo_full.png" height="40" alt="" loading="lazy" />
+</a>
+<ul class="nav nav-pills">
+<li class="nav-item">
+<a class="nav-link" href="#home">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#how">Lottery</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#tokenomics">Tokenomics</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#side-lotteries">Side Lotteries</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#faq">FAQ</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#roadmap">Roadmap</a>
+</li>
+</ul>
+<ul class="navbar-nav d-flex flex-row">
+
+<li class="nav-item me-3 me-lg-0 px-2">
+<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://coinmarketcap.com/currencies/lottery-token">
+<i class="fa CoinMarketCap h4"></i>
+</a>
+</li>
+<li class="nav-item me-3 me-lg-0 px-2">
+<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://bscscan.com/token/0x4e7ae924fd9a5d60b56be486b2900efe0c6a9ca7">
+<i class="fa BscScan h4"></i>
+</a>
+</li>
+<li class="nav-item me-3 me-lg-0 px-2">
+<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/lottery_token">
+<i class="fa fa-twitter h4"></i>
+</a>
+</li>
+<li class="nav-item me-3 me-lg-0 px-2">
+<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://t.me/lotterytoken">
+<i class="fa fa-telegram h4"></i>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section id="home" class="container-fluid">
+<div class="container">
+<h1 class="home-title display-4">
+SIMPLY HOLD AT LEAST <span id="minimum" class="gold">18 LOT</span>
+<br>
+& HAVE A <span class="gold">LIFETIME OF CHANCES</span>
+<br>
+TO WIN THE LOTTERY!
+</h1>
+<div class="home-buttons flex-mobile">
+<a class="btn btn-lg home-button" target="_blank" rel="noopener noreferrer" href="https://telegram.org/lotterytoken">
+<img id="telegram-icon" class="home-button-icon" src="icons/telegram.svg" alt="Telegram Icon">
+<span class="vertical-align h6">Join our Telegram</span>
+</a>
+<a class="btn btn-lg home-button" target="_blank" rel="noopener noreferrer" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x4e7ae924fd9a5d60b56be486b2900efe0c6a9ca7">
+<img id="pancake-icon" class="home-button-icon" src="icons/pancakeswap.svg" alt="Pancakeswap Icon">
+<span class="vertical-align h6">Buy on Pancakeswap</span>
+</a>
+</div>
+</div>
+<div class="container">
+<h3 id="total-amount">
+TOTAL AMOUNT DISTRIBUTED
+<br>
+<span id="lot-total" class="gold">53,091 LOT / 100,500 USD</span>
+<br>
+<span id="usd-total" class="gold">(41 WINS)</span>
+</h3>
+</div>
+<svg height="0" width="0">
+<defs>
+<clipPath id="ticket-long-path" clipPathUnits="objectBoundingBox">
+<path d="M0.077,0.998 C0.035,0.998,0.015,0.997,0.014,0.996 C0.011,0.993,0.008,0.982,0.005,0.966 C0.003,0.955,0.002,0.947,0.001,0.927 L0,0.916,0,0.803,0,0.691,0.003,0.683 C0.008,0.672,0.012,0.661,0.015,0.642 C0.022,0.606,0.025,0.568,0.026,0.519 C0.027,0.484,0.026,0.441,0.023,0.41 C0.019,0.366,0.01,0.328,0.002,0.311 L0,0.308,0,0.194 C0,0.089,0,0.078,0.001,0.071 C0.002,0.045,0.006,0.021,0.011,0.009 L0.013,0.002,0.019,0.001 C0.022,0.001,0.072,0,0.13,0 L0.234,0,0.234,0.039 C0.235,0.083,0.235,0.085,0.237,0.094 C0.238,0.098,0.238,0.099,0.24,0.099 C0.241,0.099,0.241,0.098,0.242,0.094 C0.244,0.085,0.244,0.083,0.245,0.039 L0.245,0,0.37,0,0.495,0,0.495,0.039 C0.495,0.083,0.495,0.085,0.498,0.094 C0.498,0.098,0.499,0.099,0.5,0.099 C0.502,0.099,0.502,0.098,0.503,0.094 C0.505,0.085,0.505,0.083,0.505,0.039 L0.505,0,0.63,0,0.755,0,0.755,0.039 C0.755,0.083,0.755,0.085,0.757,0.094 C0.758,0.098,0.758,0.099,0.76,0.099 C0.761,0.099,0.762,0.098,0.763,0.094 C0.765,0.085,0.765,0.083,0.765,0.039 L0.765,0,0.863,0 C0.917,0,0.966,0.001,0.974,0.001 L0.986,0.002,0.989,0.008 C0.992,0.017,0.996,0.034,0.998,0.054 C1,0.075,1,0.07,1,0.195 L1,0.309,0.999,0.311 C0.998,0.312,0.996,0.316,0.995,0.319 C0.986,0.341,0.979,0.382,0.975,0.431 C0.974,0.451,0.974,0.464,0.973,0.491 C0.973,0.531,0.974,0.553,0.977,0.585 C0.98,0.625,0.986,0.656,0.994,0.676 C0.995,0.681,0.997,0.686,0.998,0.688 L1,0.691,1,0.802 C1,0.866,1,0.917,0.999,0.922 C0.999,0.926,0.999,0.936,0.998,0.943 C0.996,0.967,0.992,0.984,0.988,0.993 L0.986,0.997,0.971,0.999 C0.952,1,0.821,1,0.789,0.999 L0.765,0.998,0.765,0.962 C0.765,0.921,0.765,0.918,0.763,0.909 C0.762,0.905,0.761,0.904,0.76,0.904 C0.758,0.904,0.758,0.905,0.757,0.909 C0.755,0.918,0.755,0.921,0.755,0.962 L0.755,0.998,0.729,0.999 C0.715,1,0.659,1,0.605,1 L0.505,1,0.505,0.963 C0.505,0.921,0.505,0.918,0.503,0.909 C0.502,0.905,0.502,0.904,0.5,0.904 C0.499,0.904,0.498,0.905,0.498,0.909 C0.495,0.918,0.495,0.921,0.495,0.963 L0.495,1,0.37,1,0.245,0.999,0.245,0.962 C0.244,0.921,0.244,0.918,0.242,0.909 C0.241,0.905,0.241,0.904,0.24,0.904 C0.238,0.904,0.238,0.905,0.237,0.909 C0.235,0.918,0.235,0.921,0.234,0.963 L0.234,1,0.187,1 C0.16,1,0.111,0.999,0.077,0.998 M0.242,0.845 C0.243,0.843,0.244,0.838,0.244,0.835 C0.244,0.829,0.244,0.827,0.244,0.755 C0.244,0.683,0.244,0.681,0.244,0.675 C0.244,0.672,0.243,0.667,0.242,0.665 C0.241,0.66,0.241,0.66,0.24,0.66 C0.238,0.66,0.238,0.66,0.237,0.665 C0.236,0.667,0.235,0.672,0.235,0.675 C0.235,0.681,0.235,0.684,0.234,0.752 C0.234,0.803,0.234,0.825,0.235,0.829 C0.235,0.836,0.236,0.845,0.238,0.848 C0.239,0.852,0.241,0.851,0.242,0.845 M0.503,0.845 C0.504,0.843,0.504,0.838,0.505,0.835 C0.505,0.829,0.505,0.827,0.505,0.755 C0.505,0.683,0.505,0.681,0.505,0.675 C0.504,0.672,0.504,0.667,0.503,0.665 C0.502,0.66,0.502,0.66,0.5,0.66 C0.499,0.66,0.498,0.66,0.498,0.665 C0.497,0.667,0.496,0.672,0.496,0.675 C0.495,0.681,0.495,0.684,0.495,0.752 C0.495,0.803,0.495,0.825,0.495,0.829 C0.496,0.836,0.497,0.845,0.498,0.848 C0.5,0.852,0.502,0.851,0.503,0.845 M0.763,0.845 C0.763,0.843,0.764,0.838,0.764,0.835 C0.765,0.829,0.765,0.827,0.765,0.755 C0.765,0.683,0.765,0.681,0.764,0.675 C0.764,0.672,0.763,0.667,0.763,0.665 C0.762,0.66,0.761,0.66,0.76,0.66 C0.758,0.66,0.758,0.66,0.757,0.665 C0.757,0.667,0.756,0.672,0.755,0.675 C0.755,0.681,0.755,0.684,0.755,0.752 C0.755,0.803,0.755,0.825,0.755,0.829 C0.755,0.836,0.757,0.845,0.758,0.848 C0.759,0.852,0.761,0.851,0.763,0.845 M0.242,0.596 C0.243,0.594,0.244,0.589,0.244,0.586 C0.244,0.58,0.244,0.578,0.244,0.506 C0.244,0.434,0.244,0.432,0.244,0.426 C0.244,0.423,0.243,0.418,0.242,0.416 C0.241,0.412,0.241,0.411,0.24,0.411 C0.238,0.411,0.238,0.412,0.237,0.416 C0.236,0.418,0.235,0.423,0.235,0.426 C0.235,0.432,0.235,0.435,0.234,0.503 C0.234,0.554,0.234,0.576,0.235,0.58 C0.235,0.587,0.236,0.596,0.238,0.6 C0.239,0.603,0.241,0.602,0.242,0.596 M0.503,0.596 C0.504,0.594,0.504,0.589,0.505,0.586 C0.505,0.58,0.505,0.578,0.505,0.506 C0.505,0.434,0.505,0.432,0.505,0.426 C0.504,0.423,0.504,0.418,0.503,0.416 C0.502,0.412,0.502,0.411,0.5,0.411 C0.499,0.411,0.498,0.412,0.498,0.416 C0.497,0.418,0.496,0.423,0.496,0.426 C0.495,0.432,0.495,0.435,0.495,0.503 C0.495,0.554,0.495,0.576,0.495,0.58 C0.496,0.587,0.497,0.596,0.498,0.6 C0.5,0.603,0.502,0.602,0.503,0.596 M0.763,0.596 C0.763,0.594,0.764,0.589,0.764,0.586 C0.765,0.58,0.765,0.578,0.765,0.506 C0.765,0.434,0.765,0.432,0.764,0.426 C0.764,0.423,0.763,0.418,0.763,0.416 C0.762,0.412,0.761,0.411,0.76,0.411 C0.758,0.411,0.758,0.412,0.757,0.416 C0.757,0.418,0.756,0.423,0.755,0.426 C0.755,0.432,0.755,0.435,0.755,0.503 C0.755,0.554,0.755,0.576,0.755,0.58 C0.755,0.587,0.757,0.596,0.758,0.6 C0.759,0.603,0.761,0.602,0.763,0.596 M0.242,0.346 C0.243,0.343,0.244,0.339,0.244,0.335 C0.244,0.33,0.244,0.327,0.244,0.256 C0.244,0.184,0.244,0.182,0.244,0.176 C0.244,0.173,0.243,0.168,0.242,0.165 C0.241,0.161,0.241,0.161,0.24,0.161 C0.238,0.161,0.238,0.161,0.237,0.165 C0.236,0.168,0.235,0.173,0.235,0.176 C0.235,0.182,0.235,0.184,0.234,0.253 C0.234,0.303,0.234,0.325,0.235,0.33 C0.235,0.337,0.236,0.346,0.238,0.349 C0.239,0.353,0.241,0.351,0.242,0.346 M0.503,0.346 C0.504,0.343,0.504,0.339,0.505,0.335 C0.505,0.33,0.505,0.327,0.505,0.256 C0.505,0.184,0.505,0.182,0.505,0.176 C0.504,0.173,0.504,0.168,0.503,0.165 C0.502,0.161,0.502,0.161,0.5,0.161 C0.499,0.161,0.498,0.161,0.498,0.165 C0.497,0.168,0.496,0.173,0.496,0.176 C0.495,0.182,0.495,0.184,0.495,0.253 C0.495,0.303,0.495,0.325,0.495,0.33 C0.496,0.337,0.497,0.346,0.498,0.349 C0.5,0.353,0.502,0.351,0.503,0.346 M0.763,0.346 C0.763,0.343,0.764,0.339,0.764,0.335 C0.765,0.33,0.765,0.327,0.765,0.256 C0.765,0.184,0.765,0.182,0.764,0.176 C0.764,0.173,0.763,0.168,0.763,0.165 C0.762,0.161,0.761,0.161,0.76,0.161 C0.758,0.161,0.758,0.161,0.757,0.165 C0.757,0.168,0.756,0.173,0.755,0.176 C0.755,0.182,0.755,0.184,0.755,0.253 C0.755,0.303,0.755,0.325,0.755,0.33 C0.755,0.337,0.757,0.346,0.758,0.349 C0.759,0.353,0.761,0.351,0.763,0.346"></path>
+</clipPath>
+</defs>
+</svg>
+<div class="container mb-5">
+<div class="container progress-block w-75 w-80-mobile">
+<div class="container my-1">
+<h3>THE POT IS <span id="percentage">0%</span> FILLED<span id="points"></span></h3>
+</div>
+<div class="container my-2 d-flex justify-content-center">
+<div class="progress">
+<div id="progress-bar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+</div>
+</div>
+</div
+
+            <div class="container my-1">
+<h3>CONGRATULATIONS TO OUR
+<a id="last-win-address" target="_blank" rel="noopener noreferrer" href='https://bscscan.com/tx/0x714b8fdd1a7e35e71d1cfc4f1bd53864010acf3f8396a56377a62806b0bc5efe'>LATEST WINNER</a> OF
+<br>
+<span class="last-win no-wrap">
+<span id="lot-win">1,264.46 LOT</span><span id="usd-win">= 452.92 USD</span>
+</span>
+</h3>
+</div>
+</div>
+</div>
+<div class="container-fluid stat-bar">
+<div class="stat-div my-3">
+<p class="stat"> Value: <span id="price"></p>
+</div>
+<div class="stat-div my-3">
+<p class="stat">Holders: <span id="holder"></p>
+</div>
+<div class="stat-div my-3">
+<p class="stat">Chance: <span id="chance"></span></p>
+</div>
+<div class="stat-div my-3">
+<p class="stat">Market Cap: <span id="mcap"></p>
+</div>
+<div class="stat-div my-3">
+<p class="stat">Total Supply: <span id="supply"></p>
+</div>
+</div>
+</section>
+
+<section id="how">
+<div class="container section-content">
+<div class="container w-75 py-4 mb-1">
+<h1 class="section-title text-center py-5">How it works?</h1>
+</div>
+<div class="container w-75 w-90-mobile d-flex align-items-stretch flex-mobile">
+<div class="card card-panel how-to-panel">
+<div class="card-body">
+<svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.81073 7.65625C8.03785 3.675 11.1293 0 15.1483 0C18.7035 0 21.6404 2.90937 21.6404 6.43125V14.3937C22.5678 14.3937 23.4953 14.2406 24.4227 14.2406C25.3502 14.2406 26.123 14.2406 27.0505 14.3937V6.43125C27.0505 2.90937 29.9874 0 33.5426 0C37.5615 0 40.653 3.675 40.0347 7.65625L38.3344 16.9969C44.3628 19.6 49 24.1938 49 29.8594V33.3812C49 38.1281 45.9085 42.1094 41.4259 44.7125C36.9432 47.4688 31.0694 49 24.4227 49C17.776 49 11.9022 47.4688 7.41956 44.7125C3.09148 42.1094 0 38.1281 0 33.3812V29.8594C0 24.1938 4.48265 19.6 10.511 16.9969L8.81073 7.65625ZM36.0158 18.2219L38.0252 7.19687C38.489 4.44062 36.4795 1.8375 33.5426 1.8375C31.0694 1.8375 29.0599 3.82812 29.0599 6.27812V16.3844C28.4416 16.2312 27.6688 16.2313 27.0505 16.2313C26.123 16.2313 25.3502 16.0781 24.4227 16.0781C23.4953 16.0781 22.5678 16.0781 21.6404 16.2313C21.0221 16.2313 20.2492 16.3844 19.6309 16.3844V6.43125C19.6309 3.98125 17.6215 1.99062 15.1483 1.99062C12.3659 1.99062 10.2019 4.59375 10.8202 7.35L12.8297 18.375C6.33754 20.825 2.00946 25.1125 2.00946 30.0125V33.5344C2.00946 41.0375 12.0568 47.1625 24.4227 47.1625C36.7886 47.1625 46.836 41.0375 46.836 33.5344V30.0125C46.9905 24.9594 42.6625 20.6719 36.0158 18.2219Z" fill="#AF002B" />
+<path d="M18.2398 28.9406C18.2398 30.9312 17.1578 32.6156 15.7666 32.6156C14.3755 32.6156 13.2935 30.9312 13.2935 28.9406C13.2935 26.95 14.3755 25.2656 15.7666 25.2656C17.1578 25.2656 18.2398 26.95 18.2398 28.9406Z" fill="#AF002B" />
+<path d="M35.3975 28.9406C35.3975 30.9312 34.3155 32.6156 32.9244 32.6156C31.5332 32.6156 30.4512 30.9312 30.4512 28.9406C30.4512 26.95 31.5332 25.2656 32.9244 25.2656C34.3155 25.2656 35.3975 26.95 35.3975 28.9406Z" fill="#AF002B" />
+</svg>
+<h6 class="how-to-title py-2">1. Buy at least 20 LOT <span class="no-wrap">(6% Fee)</span></h6>
+<h6 class="how-to-description">You need to hold at least 18 Lottery Tokens to participate in the
+prize draw.</h6>
+<a target="_blank" rel="noopener noreferrer" class="stretched-link" href="https://v1exchange.pancakeswap.finance/#/swap?outputCurrency=0x4e7ae924fd9a5d60b56be486b2900efe0c6a9ca7"></a>
+</div>
+</div>
+<div class="card card-panel how-to-panel mx-4 middle-panel">
+<div class="card-body">
+<svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.5 0C33.3549 0 43 9.64511 43 21.5C43 33.3548 33.3549 42.9999 21.5 42.9999C9.6452 42.9999 8.7738e-05 33.3548 8.7738e-05 21.5C8.7738e-05 9.64511 9.64511 0 21.5 0ZM21.5 41.1304C32.3248 41.1304 41.1305 32.3247 41.1305 21.5C41.1305 10.6752 32.3248 1.86953 21.5 1.86953C10.6753 1.86953 1.86962 10.6752 1.86962 21.5C1.86962 32.3247 10.6753 41.1304 21.5 41.1304Z" fill="#AF002B" />
+<path d="M12.4249 29.253L20.5649 21.1129V6.54345C20.5649 6.02745 20.9838 5.60864 21.4998 5.60864C22.0158 5.60864 22.4346 6.02745 22.4346 6.54345V21.5C22.4346 21.7486 22.3355 21.9861 22.1616 22.1618L13.7486 30.5749C13.5653 30.7562 13.3261 30.8478 13.0867 30.8478C12.8474 30.8478 12.6081 30.7563 12.4249 30.5749C12.0603 30.2102 12.0603 29.6176 12.4249 29.253Z" fill="#AF002B" />
+</svg>
+<h6 class="how-to-title py-2">2. Wait for the prize pool to fill</h6>
+<h6 class="how-to-description">2% of all transactions goes towards filling the lottery prize
+pool.
+</h6>
+<a class="smoothscroll stretched-link" href="#home"></a>
+</div>
+</div>
+<div class="card card-panel how-to-panel">
+<div class="card-body">
+<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M24.8256 18.1519L22.7341 16.3844L23.0046 13.6591C23.0344 13.3582 22.8935 13.072 22.6368 12.912C22.3802 12.7521 22.0611 12.7516 21.804 12.911L19.4765 14.3539L16.9684 13.2546C16.6913 13.1332 16.3756 13.1786 16.1441 13.3733C15.9126 13.5681 15.8136 13.8716 15.8858 14.1652L16.5389 16.8247L14.7185 18.8702C14.5173 19.0961 14.4629 19.4106 14.5765 19.691C14.6901 19.9713 14.9481 20.1592 15.2497 20.1813L17.9809 20.382L19.3639 22.7458C19.507 22.9902 19.7635 23.1361 20.0432 23.1361C20.0622 23.1361 20.0814 23.1354 20.1006 23.1341C20.4022 23.1127 20.6605 22.9255 20.7749 22.6454L21.8097 20.1099L24.4855 19.5249C24.7808 19.4602 25.0094 19.2375 25.0821 18.9441C25.1548 18.6507 25.0565 18.3472 24.8256 18.1519ZM21.2394 18.8614C20.9857 18.917 20.7756 19.0937 20.6776 19.3339L19.9562 21.1015L18.9917 19.4532C18.8606 19.2296 18.6281 19.0847 18.369 19.0655L16.465 18.9256L17.7344 17.4991C17.9068 17.3053 17.9728 17.039 17.911 16.7869L17.4556 14.9329L19.2037 15.699C19.4415 15.8035 19.7152 15.7841 19.9364 15.6472L21.5591 14.6412L21.3706 16.541C21.3449 16.7993 21.4479 17.0537 21.6463 17.2214L23.1045 18.4536L21.2394 18.8614Z" fill="#AF002B" />
+<path d="M44.198 34.7552L41.9622 32.7804C41.392 32.2768 40.5229 32.2663 39.9406 32.7559L39.8404 32.8402C39.7415 32.4841 39.561 32.147 39.296 31.8616C38.9723 31.513 38.5613 31.2744 38.1084 31.1671C38.3696 30.365 38.2008 29.4482 37.5874 28.7874C37.1512 28.3174 36.558 28.0455 35.9172 28.0219C35.8979 28.0212 35.8788 28.0215 35.8596 28.0212C35.8889 27.3991 35.6789 26.7662 35.2228 26.2749C34.792 25.8107 34.2079 25.5402 33.5761 25.5108C33.6331 24.8581 33.4252 24.1849 32.9455 23.6682C32.5092 23.1982 31.9161 22.9263 31.2753 22.9027C30.6343 22.8785 30.0229 23.1063 29.5531 23.5426L29.2347 23.8384C28.7722 23.5046 28.2188 23.315 27.6311 23.2957C27.5571 23.2932 27.4835 23.2942 27.4102 23.2971L27.6488 22.5008C28.0768 21.0727 28.3431 18.4836 28.3352 18.6225C28.3582 18.6337 28.3809 18.6453 28.4045 18.6558C28.7328 18.8022 29.0865 18.875 29.4388 18.875C29.8426 18.875 30.2446 18.7793 30.6038 18.5891C31.3516 18.1933 31.8823 17.3658 31.9245 16.53C31.9647 15.7346 31.5901 15.0323 30.8699 14.5523C30.5616 14.347 30.1451 14.4302 29.9398 14.7384C29.7344 15.0467 29.8178 15.4631 30.126 15.6686C30.4463 15.8819 30.6007 16.149 30.5848 16.4622C30.5662 16.8308 30.3102 17.2266 29.9762 17.4034C29.6699 17.5657 29.2771 17.576 28.9509 17.4305C28.7427 17.3377 28.4727 17.1401 28.3694 16.7266C28.0617 15.4949 28.7673 14.2724 29.5843 12.857C31.0641 10.2931 32.9057 7.1025 29.0507 2.54598L27.4541 0.658906C27.1326 0.278777 26.6823 0.0470704 26.1862 0.0062813C25.6901 -0.0345078 25.208 0.120563 24.8286 0.443102C23.8 1.31773 23.2653 2.64212 23.3981 3.98573L23.4778 4.79181C23.5186 5.20518 23.3594 5.61127 23.0531 5.88925L23.9174 6.91706C24.5624 6.35374 24.8971 5.51352 24.8127 4.65983L24.733 3.85375C24.6434 2.94777 25.0039 2.05481 25.6975 1.46507C25.8033 1.37514 25.9373 1.33166 26.0762 1.34325C26.2146 1.35457 26.3402 1.41925 26.4299 1.52527L28.0265 3.41235C31.2721 7.24877 29.8878 9.64723 28.4223 12.1863C28.193 12.5835 27.9619 12.9844 27.7529 13.3908C27.1986 11.4862 26.271 9.71534 24.9884 8.19042L21.9184 4.54034L21.9357 4.52587C22.182 4.31869 22.333 4.02805 22.3606 3.70739C22.3883 3.38665 22.2895 3.07445 22.0823 2.82818L21.1014 1.66192C20.8942 1.41557 20.6036 1.26463 20.2829 1.23696C19.9623 1.20938 19.65 1.30803 19.4036 1.51521L3.90224 14.5527C3.39382 14.9803 3.32805 15.7418 3.75562 16.2504L4.73653 17.4167C4.94371 17.663 5.23435 17.8139 5.5551 17.8416C5.5905 17.8447 5.62571 17.8462 5.66075 17.8462C5.94385 17.8462 6.21518 17.7476 6.43422 17.5633L6.45156 17.5486L7.60452 18.9196C7.27983 19.1697 6.85666 19.2558 6.45955 19.147L5.67854 18.9326C4.37671 18.5752 2.98098 18.879 1.94544 19.7456C1.5637 20.0652 1.32948 20.5141 1.28608 21.0101C1.2426 21.5061 1.39515 21.9889 1.71562 22.3699L3.30667 24.2616C7.1483 28.8293 10.6038 27.5519 13.3803 26.5254C14.6334 26.0621 15.7467 25.6507 16.7463 25.7949C16.9318 25.8471 17.1185 25.8965 17.3067 25.9419C17.3377 25.9541 17.3686 25.9665 17.3994 25.98C17.7896 26.1514 17.9388 26.4509 17.9953 26.6718C18.0837 27.0177 18.0073 27.4031 17.7958 27.6778C17.5652 27.9772 17.1319 28.1624 16.7654 28.119C16.4539 28.0818 16.2168 27.8847 16.0603 27.5331C15.9099 27.1946 15.5136 27.0424 15.1748 27.1928C14.8364 27.3433 14.684 27.7397 14.8345 28.0782C15.1863 28.869 15.8155 29.3566 16.6062 29.451C16.6936 29.4615 16.7815 29.4666 16.8698 29.4666C17.6229 29.4665 18.3966 29.0962 18.8584 28.4963C19.3228 27.8934 19.4859 27.0872 19.2948 26.3397C19.2904 26.3226 19.2851 26.306 19.2803 26.2891C19.8904 26.3578 20.5092 26.3939 21.1348 26.3939C21.8049 26.3939 22.4826 26.3539 23.1638 26.2726L23.2232 26.2655C22.9178 26.6299 22.6799 27.0487 22.5262 27.4976L19.8896 33.983L5.82526 44.7974C5.59759 44.9725 5.50658 45.2732 5.59912 45.545C5.69157 45.817 5.94691 45.9999 6.23414 45.9999H22.1699C22.3508 45.9999 22.5242 45.9268 22.6504 45.7972L23.5379 44.8859C23.7964 44.6205 23.7909 44.1958 23.5255 43.9374C23.2601 43.679 22.8354 43.6844 22.577 43.9498L21.8869 44.6584H8.20692L20.8517 34.9358C20.8611 34.9286 20.8694 34.9208 20.8782 34.9133C20.8842 34.9082 20.8904 34.9032 20.8963 34.8978C20.9177 34.8782 20.9375 34.8576 20.9558 34.8358C20.9594 34.8315 20.9628 34.8269 20.9663 34.8224C20.983 34.8016 20.9982 34.7799 21.0122 34.7575C21.0148 34.7533 21.0177 34.7492 21.0202 34.7449C21.036 34.7181 21.0496 34.6906 21.0615 34.6622C21.0623 34.6603 21.0635 34.6586 21.0642 34.6567L23.7768 27.9845C23.782 27.9717 23.7868 27.9586 23.7912 27.9455C23.9229 27.5535 24.153 27.1953 24.4565 26.9096L26.383 25.0964C26.7138 24.785 27.1404 24.6215 27.5868 24.6364C28.0083 24.6503 28.3957 24.8247 28.6776 25.1276L28.7493 25.2046L28.7494 25.2047L28.7495 25.2048L31.1059 27.7357C31.106 27.7358 31.1061 27.7359 31.1061 27.736C31.1062 27.7361 31.1063 27.7362 31.1064 27.7363L31.1065 27.7364C31.1067 27.7366 31.1067 27.7367 31.1069 27.7369C31.1071 27.7371 31.1073 27.7373 31.1075 27.7375L31.4413 28.096C31.582 28.2471 31.6552 28.4468 31.6475 28.6581C31.6393 28.885 31.5409 29.0973 31.3704 29.2557L30.982 29.6166C30.7133 29.8662 30.3315 29.9134 30.035 29.7623C30.0273 29.758 30.0192 29.7545 30.0112 29.7506C29.9424 29.7124 29.8786 29.6632 29.8224 29.6029L28.8443 28.5506C28.4947 28.1746 28.0171 27.958 27.4995 27.9408C26.9692 27.9234 26.461 28.1157 26.0706 28.4832C26.0342 28.5175 26.002 28.5553 25.9745 28.596C25.9058 28.6977 25.866 28.8168 25.8602 28.9404C25.8591 28.9651 25.8593 28.99 25.8609 29.0149C25.861 29.0158 25.861 29.0167 25.861 29.0176C25.8643 29.0686 25.8665 29.119 25.8679 29.1691C25.8686 29.1973 25.8685 29.2253 25.8687 29.2533C25.8689 29.2749 25.8692 29.2965 25.8689 29.3179C25.8686 29.3537 25.8673 29.389 25.866 29.4244C25.8655 29.4372 25.8652 29.4501 25.8645 29.4629C25.8626 29.5028 25.8598 29.5424 25.8565 29.5817C25.8561 29.5868 25.8557 29.592 25.8553 29.5971C25.8534 29.6139 25.8519 29.6307 25.8512 29.6476C25.7886 30.2686 25.5642 30.8244 25.172 31.3334C24.9459 31.6268 25.0005 32.048 25.2939 32.274C25.5873 32.5001 26.0086 32.4454 26.2346 32.152C26.4669 31.8505 26.6575 31.5329 26.8072 31.2007L32.5122 39.0035L32.3761 39.118C32.2909 39.1472 32.2101 39.1937 32.1397 39.2586C31.6656 39.6948 31.0853 39.9887 30.4597 40.1102L26.2594 40.4121C26.0955 40.4238 25.9416 40.4954 25.827 40.613L24.7547 41.714C24.4962 41.9794 24.5018 42.4041 24.7672 42.6626C24.8976 42.7895 25.0664 42.8528 25.2351 42.8528C25.4097 42.8528 25.5841 42.785 25.7156 42.6501L26.6099 41.7318L30.5942 41.4455C30.6018 41.445 30.6093 41.4435 30.6168 41.4427C30.6342 41.6829 30.706 41.9211 30.8383 42.1362L32.4007 44.6772C32.6369 45.0614 33.0276 45.3229 33.4727 45.3948C33.5552 45.4082 33.6378 45.4147 33.72 45.4147C34.0819 45.4147 34.435 45.2879 34.7162 45.0513L44.1694 37.1009C44.5145 36.8107 44.7155 36.3856 44.721 35.9347C44.7266 35.4836 44.5359 35.0539 44.198 34.7552ZM12.9153 25.2672C10.1652 26.2839 7.56787 27.244 4.33349 23.3983L2.74245 21.5066C2.65314 21.4003 2.61056 21.2656 2.62269 21.1273C2.63482 20.9889 2.70013 20.8636 2.80669 20.7746C3.50486 20.1903 4.44598 19.9855 5.32375 20.2263L6.10476 20.4407C6.92737 20.6663 7.80667 20.4816 8.46936 19.9477L9.52161 21.1989C10.8073 22.7276 12.3973 23.9473 14.184 24.8202C13.7587 24.9555 13.3351 25.1119 12.9153 25.2672ZM26.3636 22.1157L25.8572 23.8058C25.7192 23.8987 25.5873 24.003 25.4635 24.1194L24.8217 24.7235L23.0049 24.9405C18.1211 25.5241 13.464 23.8024 10.5482 20.3354L7.47829 16.6853L8.67672 15.6774C8.96026 15.4389 8.99674 15.0158 8.7583 14.7323C8.51994 14.4488 8.09669 14.412 7.81323 14.6506L6.10171 16.09C6.10162 16.0901 6.10153 16.0902 6.10144 16.0902C6.10135 16.0903 6.10126 16.0904 6.10117 16.0905L5.67531 16.4487L4.87013 15.4914L20.1628 2.62972L20.968 3.58709L20.5427 3.94476C20.5425 3.94503 20.5421 3.94521 20.5418 3.94539C20.5416 3.94557 20.5413 3.94593 20.541 3.94611L10.2325 12.616C9.94899 12.8546 9.91243 13.2776 10.1509 13.5611C10.3892 13.8446 10.8123 13.8809 11.0959 13.6428L20.892 5.40373L23.9618 9.05382C26.8778 12.521 27.7756 17.404 26.3636 22.1157ZM37.5941 32.4449C37.8698 32.4552 38.1252 32.5721 38.3128 32.7744C38.6329 33.1192 38.6767 33.6359 38.428 34.028L35.5055 36.4861C35.1907 36.5125 34.8849 36.3964 34.6664 36.1609C34.279 35.7437 34.3033 35.0891 34.7203 34.7016L35.1437 34.3082C35.2211 34.2518 35.2959 34.1909 35.3671 34.1248L37.0028 32.6053C37.1778 32.494 37.3816 32.438 37.5941 32.4449ZM35.187 29.5782C35.3711 29.4375 35.5939 29.3616 35.8274 29.3616C35.8407 29.3616 35.8541 29.3619 35.8675 29.3624C36.1501 29.3729 36.4117 29.4927 36.6042 29.7C37.0012 30.1276 36.9764 30.7986 36.5489 31.1957L36.1626 31.5546C36.0854 31.6109 36.0109 31.6714 35.9398 31.7374L34.3021 33.2588C34.1223 33.3741 33.9122 33.4327 33.6944 33.4242C33.4118 33.4137 33.1502 33.2938 32.9577 33.0866C32.5867 32.6869 32.5843 32.0749 32.9345 31.6724C32.9573 31.6528 32.9802 31.6329 33.0024 31.6123L35.0972 29.6661C35.1282 29.6374 35.158 29.6081 35.187 29.5782ZM31.6319 26.3322L30.1893 24.7827L30.4661 24.5254C30.6733 24.333 30.943 24.2346 31.2256 24.2432C31.5083 24.2537 31.7699 24.3735 31.9623 24.5808C32.3593 25.0084 32.3345 25.6794 31.907 26.0766L31.6319 26.3322ZM31.895 30.5995L32.2835 30.2385C32.7167 29.8362 32.9669 29.2921 32.9881 28.7068C33.0065 28.1984 32.8484 27.7128 32.5407 27.3203L32.7433 27.1321C32.9505 26.9396 33.2197 26.8388 33.5029 26.8498C33.7854 26.8603 34.0471 26.9802 34.2395 27.1874C34.6107 27.5872 34.6129 28.1995 34.2624 28.6021C34.2397 28.6217 34.217 28.6413 34.1949 28.6618L32.1001 30.608C32.0691 30.6368 32.0391 30.6663 32.0099 30.6963C31.8524 30.8168 31.666 30.8889 31.4694 30.907C31.6195 30.8229 31.7631 30.722 31.895 30.5995ZM27.2065 29.474C27.2085 29.4234 27.2103 29.3729 27.2108 29.3218C27.2301 29.3146 27.2498 29.3083 27.2698 29.3029C27.3297 29.2868 27.392 29.2795 27.4549 29.2818C27.6128 29.287 27.7573 29.3519 27.8619 29.4643L28.84 30.5165C28.9401 30.6241 29.0491 30.7189 29.1647 30.8009C29.2724 31.0539 29.4215 31.2839 29.6099 31.4869C30.0462 31.9569 30.6394 32.2287 31.2802 32.2525C31.2995 32.2531 31.3187 32.2533 31.3379 32.2535C31.3086 32.8754 31.5187 33.5082 31.9746 33.9994C32.3015 34.3515 32.7164 34.5924 33.1734 34.7011C32.9064 35.4989 33.0716 36.415 33.6831 37.0737C33.8538 37.2575 34.0507 37.4103 34.265 37.5293L33.5412 38.1381L27.2065 29.474ZM43.3059 36.0741L33.8527 44.0245C33.7897 44.0777 33.7214 44.076 33.6866 44.0704C33.6517 44.0648 33.5866 44.0448 33.5434 43.9746L31.981 41.4334C31.9269 41.3455 31.945 41.2333 32.024 41.1668L40.8035 33.7829C40.8039 33.7826 40.8035 33.7829 40.8038 33.7826C40.842 33.7504 40.8896 33.7343 40.937 33.7343C40.9861 33.7343 41.0352 33.7516 41.0739 33.7858L43.3097 35.7607C43.3715 35.8153 43.38 35.8829 43.3796 35.9184C43.3793 35.9537 43.3691 36.021 43.3059 36.0741Z" fill="#AF002B" />
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="46" height="46" fill="white" />
+</clipPath>
+</defs>
+</svg>
+<h6 class="how-to-title py-2">3. Get a chance to win everytime!</h6>
+<h6 class="how-to-description">One lucky holder will win all LOT tokens accumulated in the prize
+pool.</h6>
+<a target="_blank" rel="noopener noreferrer" class="stretched-link" href="https://bscscan.com/token/0x4e7ae924fd9a5d60b56be486b2900efe0c6a9ca7?a=0x0000000000000000000000000000000000000000"></a>
+</div>
+</div>
+</div>
+<div class="container d-flex w-75 w-90-mobile justify-content-center pt-4 flex-column">
+<div class="card card-panel w-100 w-80-mobile mx-auto">
+<div class="card-body check-body flex-mobile">
+<label class="check-title pe-4">See if your address is
+eligible:</label>
+<div class="input-group">
+<input id="check-input" type="text" class="form-control check-input" placeholder="0x0000000000000000000000000000000000000000" aria-label="Your Address" aria-describedby="basic-addon2" minlength="42" maxlength="42">
+<div class="input-group-append">
+<button id="check-button" class="btn btn-outline-secondary" type="button">Check</button>
+</div>
+</div>
+</div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+<symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+</symbol>
+<symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+</symbol>
+<symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+<path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+</symbol>
+</svg>
+<div id="check-success" class="alert alert-success mt-4 text-center hidden" role="alert">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+<use xlink:href="#check-circle-fill" />
+</svg>
+Congratulations, you're eligible
+</div>
+<div id="check-failure" class="alert alert-warning mt-4 text-center hidden" role="alert">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:">
+<use xlink:href="#exclamation-triangle-fill" />
+</svg>
+You're currently not eligible
+</div>
+<div id="check-error" class="alert alert-danger mt-4 text-center hidden" role="alert">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+<use xlink:href="#exclamation-triangle-fill" />
+</svg>
+Invalid Address
+</div>
+</div>
+</div>
+</section>
+
+<div class="container pt-5">
+<div class="container w-75 w-100-mobile pt-5">
+<div class="section-border"></div>
+</div>
+</div>
+
+<section id="social">
+<div class="container section-content">
+<div class="container w-75">
+<div class="container d-flex justify-content-around social flex-mobile">
+<div class="container card social-card">
+<div class="card-body d-flex flex-row justify-content-center">
+<img src="images/social/bscscan.png" alt="" class="social-icon">
+<h5 class="social-title">BscScan</h5>
+<a target="_blank" rel="noopener noreferrer" class="stretched-link" href="https://bscscan.com/token/0x4e7ae924fd9a5d60b56be486b2900efe0c6a9ca7"></a>
+</div>
+</div>
+<div class="container card social-card">
+<div class="card-body d-flex flex-row justify-content-center">
+<img src="images/social/coinmarketcap.png" alt="" class="social-icon">
+<h5 class="social-title">CoinMarketCap</h5>
+<a target="_blank" rel="noopener noreferrer" class="stretched-link" href="https://coinmarketcap.com/currencies/lottery-token/"></a>
+</div>
+</div>
+<div class="container card social-card">
+<div class="card-body d-flex flex-row justify-content-center">
+<img src="images/social/coingecko.png" alt="" class="social-icon">
+<h5 class="social-title">CoinGecko</h5>
+<a target="_blank" rel="noopener noreferrer" class="stretched-link" href="https://www.coingecko.com/en/coins/lottery-token"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="container">
+<div class="container w-75 w-100-mobile">
+<div class="section-border"></div>
+</div>
+</div>
+
+<section id="tokenomics">
+<div class="container section-content">
+<div class="container w-75 py-4 mb-1">
+<h1 class="section-title text-center py-5">Tokenomics</h1>
+</div>
+<div class="container d-flex w-75 w-48-mobile justify-content-center">
+<p class="tokenomics-description mb-4">
+The initial Supply was <span class="highlight">1,250,000 LOT</span>, since then <span class="highlight">105,000 LOT</span> have been manually burned.
+<br>
+Lottery Token has a <span class="highlight">6%</span> Transaction Fee, <span class="highlight">2%</span> of which is used to fund our decentralized Lottery.
+<br>
+<span class="highlight">2%</span> are redistributed among all holders depending on their amount. The
+last <span class="highlight">2%</span> are burned to further reduce the supply.
+</p>
+</div>
+<svg height="0" width="0">
+<defs>
+<clipPath id="ticket-path" clipPathUnits="objectBoundingBox">
+<path d="M0.252,0.999 C0.054,0.998,0.044,0.998,0.039,0.995 C0.027,0.987,0.015,0.971,0.009,0.954 C0.007,0.949,0.004,0.939,0.003,0.931 L0,0.916,0,0.804,0,0.691,0.008,0.685 C0.026,0.673,0.038,0.659,0.052,0.633 C0.084,0.574,0.091,0.484,0.07,0.41 C0.057,0.366,0.033,0.329,0.007,0.313 L0,0.309,0,0.196 C0,0.105,0,0.082,0.002,0.074 C0.007,0.038,0.025,0.008,0.045,0.002 C0.049,0,0.2,0,0.503,0 C0.946,0.001,0.955,0.001,0.96,0.004 C0.978,0.016,0.991,0.039,0.997,0.069 C0.999,0.082,0.999,0.084,1,0.195 L1,0.309,0.994,0.312 C0.976,0.322,0.956,0.347,0.942,0.377 C0.936,0.388,0.929,0.411,0.926,0.425 C0.919,0.455,0.918,0.467,0.918,0.5 C0.918,0.527,0.918,0.533,0.921,0.549 C0.93,0.611,0.955,0.66,0.99,0.684 L0.999,0.691,0.999,0.803 C0.999,0.924,0.999,0.923,0.994,0.944 C0.986,0.971,0.973,0.989,0.955,0.998 C0.95,1,0.627,1,0.252,0.999"></path>
+</clipPath>
+</defs>
+</svg>
+<div class="container d-flex w-75 justify-content-space-around flex-mobile">
+<div class="container">
+<figure class="figure ticket">
+<img src="images/gif/lottery.gif" class="figure-img img-fluid" alt="">
+<h3 class="position-absolute">2% Lottery</h3>
+</figure>
+</div>
+<div class="mobile-divider"></div>
+<div class="container">
+<figure class="figure ticket">
+<img src="images/gif/money.gif" class="figure-img img-fluid" alt="">
+<h3 class="position-absolute">2% Share</h3>
+</figure>
+</div>
+<div class="mobile-divider"></div>
+<div class="container">
+<figure class="figure ticket">
+<img src="images/gif/fire.gif" class="figure-img img-fluid" alt="">
+<h3 class="position-absolute">2% Burn</h3>
+</figure>
+ </div>
+</div>
+</div>
+</section>
+
+<div class="container pt-5">
+<div class="container w-75 w-100-mobile pt-5">
+<div class="section-border"></div>
+</div>
+</div>
+
+<section id="social">
+<div class="container section-content">
+<div class="container w-75">
+<div class="container d-flex justify-content-around social flex-mobile">
+<div class="container card social-card">
+<div class="card-body d-flex flex-row justify-content-center">
+<img src="images/social/discord.png" alt="" class="social-icon">
+<h5 class="social-title discord">Discord</h5>
+<a target="_blank" rel="noopener noreferrer" class="stretched-link" href="https://discord.gg/WBKDXCVKbS"></a>
+</div>
+</div>
+<div class="container card social-card">
+<div class="card-body d-flex flex-row justify-content-center">
+<img src="images/social/twitter.png" alt="" class="social-icon">
+<h5 class="social-title twitter">Twitter</h5>
+<a target="_blank" rel="noopener noreferrer" class="stretched-link" href="https://twitter.com/lottery_token"></a>
+</div>
+</div>
+<div class="container card social-card">
+<div class="card-body d-flex flex-row justify-content-center">
+<img src="images/social/twitch.png" alt="" class="social-icon">
+<h5 class="social-title twitch">Twitch</h5>
+<a target="_blank" rel="noopener noreferrer" class="stretched-link" href="https://twitch.tv/lotterytoken"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="container">
+<div class="container w-75 w-100-mobile">
+<div class="section-border"></div>
+</div>
+</div>
+
+<section id="side-lotteries">
+<div class="container section-content">
+<div class="container w-75 py-4 mb-1">
+<h1 class="section-title text-center py-5">Side Lotteries</h1>
+</div>
+<div class="container w-75 w-100-mobile">
+<div class="card card-panel pineapple-card">
+<div class="card-body">
+<h1 class="card-title display-1 pineapple-title mt-1">PINEAPPLE<br>EXPRESS</h1>
+<h6 class="pineapple-subtitle mt-3 mb-2">3 WINNERS DRAWN EVERY SUNDAY LIVE ON
+<a class="lot-url" target="_blank" rel="noopener noreferrer" href="https://twitch.tv/lotterytoken">TWITCH</a>
+</h6>
+<div class="container d-flex justify-content-center w-50 w-100-mobile flex-mobile mb-2">
+<div class="ticket-display mx-2">
+<div class="my-1">Your Tickets:
+<span id="pineapple-user-amount"></span>
+</div>
+</div>
+<div class="ticket-display mx-2">
+<div class="my-1">Total Tickets:
+<span id="pineapple-ticket-amount"></span>
+</div>
+</div>
+</div>
+<div class="container d-flex justify-content-center w-50 w-100-mobile flex-mobile mb-1">
+<button id="pineapple-buy" class="btn btn-primary">
+<span class="spinner-border spinner-border-sm hidden" role="status" aria-hidden="true">
+</span>
+<span class="h6 bold small">BUY 1 TICKET</span>
+</button>
+<button id="pineapple-donate" class="btn btn-primary">
+<span class="spinner-border spinner-border-sm hidden" role="status" aria-hidden="true">
+</span>
+<span class="h6 bold small">DONATE THE HOST</span>
+</button>
+</div>
+<div class="container d-flex justify-content-center w-50 w-100-mobile flex-mobile mb-2">
+<div id="pineapple-success" class="alert alert-success mt-3 text-center hidden" role="alert">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+<use xlink:href="#check-circle-fill" />
+</svg>
+You bought yourself 1 Pineapple-Express Ticket
+</div>
+<div id="pineapple-failure" class="alert alert-warning mt-3 text-center hidden" role="alert">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:">
+<use xlink:href="#exclamation-triangle-fill" />
+</svg>
+You didn't accept the Transaction
+</div>
+<div id="pineapple-error" class="alert alert-danger mt-3 text-center hidden" role="alert">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+<use xlink:href="#exclamation-triangle-fill" />
+</svg>
+Something went wrong!
+</div>
+</div>
+</div>
+</div>
+<div class="card card-panel multipla-card mt-5">
+<div class="card-body">
+<h1 class="display-1 multipla-title mt-1 mb-4">MULTIPLA<br>MADNESS </h1>
+<div class="container d-flex w-47 w-100-mobile multipla-scratch mb-2">
+<canvas class="canvas" id="scratch-canvas" width="405" height="180"></canvas>
+<h1 id="multipla-multiplier" class="display-4 multipla-multiplier" style="visibility: hidden">
+LOST
+</h1>
+</div>
+<div class="container d-flex justify-content-center w-50 w-100-mobile flex-mobile mb-2 testo">
+<button id="multipla-buy" class="btn btn-primary">
+<span class="spinner-border spinner-border-sm hidden" role="status" aria-hidden="true">
+</span>
+<span class="h6 bold small">BUY 1 TICKET / 4 LOT</span>
+</button>
+<div class="ticket-display mx-2">
+<div class="my-auto">Your LOT:
+<span id="multipla-user-amount"></span>
+</div>
+</div>
+</div>
+<div class="container d-flex justify-content-center w-50 w-100-mobile flex-mobile mb-1">
+<div class="multipla-deposit mx-2">
+<label for="multipla-deposit-input"></label>
+<input id="multipla-deposit-input" type="number" class="form-control" placeholder="0" min="1" max="99999">
+<button id="multipla-deposit-button" type="button" class="btn btn-dark">
+<span class="spinner-border spinner-border-sm hidden" role="status" aria-hidden="true"></span>
+<span class="h6">Deposit</span>
+</button>
+</div>
+<div class="multipla-withdraw mx-2">
+<label for="multipla-withdraw-input"></label>
+<input id="multipla-withdraw-input" type="number" class="form-control" placeholder="0" min="1" max="99999" maxlength="5">
+<button id="multipla-withdraw-button" type="button" class="btn btn-dark">
+<span class="spinner-border spinner-border-sm hidden" role="status" aria-hidden="true"></span>
+<span class="h6">Withdraw</span></button>
+</div>
+</div>
+<div class="container d-flex justify-content-center w-50 w-100-mobile flex-mobile mb-2">
+<div id="multipla-success" class="alert alert-success mt-3 text-center hidden" role="alert">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+<use xlink:href="#check-circle-fill" />
+</svg>
+You bought yourself 1 Scratch Ticket!
+</div>
+<div id="multipla-failure" class="alert alert-warning mt-3 text-center hidden" role="alert">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:">
+<use xlink:href="#exclamation-triangle-fill" />
+</svg>
+You didn't accept the Transaction
+</div>
+<div id="multipla-error" class="alert alert-danger mt-3 text-center hidden" role="alert">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+<use xlink:href="#exclamation-triangle-fill" />
+</svg>
+Something went wrong!
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="container pt-5">
+<div class="container w-75 w-100-mobile pt-5">
+<div class="section-border"></div>
+</div>
+</div>
+
+<section id="faq">
+<div class="container section-content">
+<div class="container w-75 py-4 mb-1">
+<h1 class="section-title text-center py-5">FAQ</h1>
+</div>
+<div class="container w-75 w-100-mobile d-flex justify-content-center">
+<div class="container w-75 w-100-mobile">
+<div class="accordion" id="accordion-example">
+<div class="accordion-item">
+<h2 class="accordion-header" id="heading-one">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-one" aria-expanded="false" aria-controls="collapse-one">
+When was Lottery Token released?
+</button>
+</h2>
+<div id="collapse-one" class="accordion-collapse collapse" aria-labelledby="heading-one" data-bs-parent="#accordion-example">
+<div class="accordion-body">
+On <span class="highlight">15 April 2021</span>.
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="heading-two">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
+How often is the Lottery conducted?
+</button>
+</h2>
+<div id="collapse-two" class="accordion-collapse collapse" aria-labelledby="heading-two" data-bs-parent="#accordion-example">
+<div class="accordion-body">
+The Jackpot is filled with a <span class="highlight">2%</span> Transaction Fee, so its
+based on traffic.
+<br>
+On average the Lottery is conducted once a day.
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="heading-three">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-three" aria-expanded="false" aria-controls="collapse-three">
+What is the minimum to participate in the Lottery?
+</button>
+</h2>
+<div id="collapse-three" class="accordion-collapse collapse" aria-labelledby="heading-three" data-bs-parent="#accordion-example">
+<div class="accordion-body">
+You need atleast <span class="highlight">18 LOT</span>.
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="heading-four">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-four" aria-expanded="false" aria-controls="collapse-four">
+Do I have a greater Chance if I hold more?
+</button>
+</h2>
+<div id="collapse-four" class="accordion-collapse collapse" aria-labelledby="heading-four" data-bs-parent="#accordion-example">
+<div class="accordion-body">
+No, every wallet with at least <span class="highlight">18 LOT</span> has the same
+chance,
+but our Redistribution depends on the amount you hold.
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="heading-five">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-five" aria-expanded="false" aria-controls="collapse-five">
+How big is the Jackpot?
+</button>
+</h2>
+<div id="collapse-five" class="accordion-collapse collapse" aria-labelledby="heading-five" data-bs-parent="#accordion-example">
+<div class="accordion-body">
+The Jackpot is <span class="highlight">0.1%</span> of the circulating Supply.
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingThree">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-six" aria-expanded="false" aria-controls="collapse-six">
+How do I buy Lottery Token?
+</button>
+</h2>
+<div id="collapse-six" class="accordion-collapse collapse" aria-labelledby="heading-six" data-bs-parent="#accordion-example">
+<div class="accordion-body">
+<div>
+<a class="lot-url" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=Ig1NrLoTVYQ">Buy via Metamask on
+PC</a>
+<div>
+<a class="lot-url" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=4DgDTmHskfg">Buy via Metamask on
+Mobile</a>
+</div>
+<div>
+<a class="lot-url" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=UI4a7d8zuOQ">Buy via TrustWallet on
+Mobile</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="heading-seven">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-seven" aria-expanded="false" aria-controls="collapse-seven">
+Is Lottery Token audited?
+</button>
+</h2>
+<div id="collapse-seven" class="accordion-collapse collapse" aria-labelledby="heading-seven" data-bs-parent="#accordion-example">
+<div class="accordion-body">
+Yes, it's fully audited by
+<a class="lot-url" target="_blank" rel="noopener noreferrer" href="https://solidity.finance/audits/Lottery">Solidity Finance</a>.
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="heading-eight">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-eight" aria-expanded="false" aria-controls="collapse-eight">
+Is the Liquidity of LOT locked?
+</button>
+</h2>
+<div id="collapse-eight" class="accordion-collapse collapse" aria-labelledby="heading-eight" data-bs-parent="#accordion-example">
+<div class="accordion-body">
+Yes, our LP Token are locked via
+<a class="lot-url" target="_blank" rel="noopener noreferrer" href="https://dxsale.app/app/pages/dxlockview?id=0&amp;add=0xB3125A2A0baaFaaD790c56650Ef96322bC507585&amp;type=lplock&amp;chain=BSC">DxSale</a>.
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="heading-nine">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-nine" aria-expanded="false" aria-controls="collapse-nine">
+Could you explain Pineapple Express?
+</button>
+</h2>
+<div id="collapse-nine" class="accordion-collapse collapse" aria-labelledby="heading-nine" data-bs-parent="#accordion-example">
+<div class="accordion-body">
+Every Transaction of <span class="highlight">5 LOT</span> towards this <a class="lot-url" target="_blank" rel="noopener noreferrer" href="https://bscscan.com/token/0x4e7ae924fd9a5d60b56be486b2900efe0c6a9ca7?a=0x0efb90ad1558ae0313804a384b647da788a27a9c">address</a>
+counts as a ticket.
+<br>
+Sundays at <span class="highlight">5PM UTC</span>, 3 transactions from the previous week
+will be drawn and receive the following prizes:
+<br>
+1. Place: <span class="highlight">40%</span> of the pot
+<br>
+2. Place: <span class="highlight">30%</span> of the pot
+<br>
+3. Place: <span class="highlight">20%</span> of the pot
+<br>
+The last <span class="highlight">10%</span> will be burned
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="heading-ten">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ten" aria-expanded="false" aria-controls="collapse-ten">
+Could you explain Multipla Madness?
+</button>
+</h2>
+<div id="collapse-ten" class="accordion-collapse collapse" aria-labelledby="heading-ten" data-bs-parent="#accordion-example">
+<div class="accordion-body">
+<table class="table">
+<thead>
+<tr>
+<th scope="col">Prize</th>
+<th scope="col">Multiplier</th>
+<th scope="col">Chance</th>
+</tr>
+</thead>
+ <tbody>
+<tr>
+<td>400 LOT</td>
+<td>x100</td>
+<td>1/1000</td>
+</tr>
+<tr>
+<td>100 LOT</td>
+<td>x25</td>
+<td>1/250</td>
+</tr>
+<tr>
+<td>20 LOT</td>
+<td>x5</td>
+<td>1/25</td>
+</tr>
+<tr>
+<td>8 LOT</td>
+<td>x2</td>
+<td>1/5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="container pt-5">
+<div class="container w-75 w-100-mobile pt-5">
+<div class="section-border"></div>
+</div>
+</div>
+
+<section id="roadmap">
+<div class="container section-content">
+<div class="container w-75 py-4 mb-1">
+<h1 class="section-title text-center py-5">Roadmap</h1>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+<symbol id="clock" width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M11.4998 0.84375C17.7286 0.84375 22.7964 5.96771 22.7964 12.2656C22.7964 18.5635 17.7286 23.6875 11.4998 23.6875C5.27098 23.6875 0.203212 18.5635 0.203212 12.2656C0.203212 5.96771 5.27094 0.84375 11.4998 0.84375ZM11.4998 22.6943C17.1874 22.6943 21.8141 18.0163 21.8141 12.2656C21.8141 6.51494 17.1874 1.83694 11.4998 1.83694C5.81221 1.83694 1.18551 6.51494 1.18551 12.2656C1.18551 18.0163 5.81221 22.6943 11.4998 22.6943Z" fill="#000240"></path>
+<path d="M6.73189 16.3846L11.0089 12.0601V4.3201C11.0089 4.04598 11.2289 3.82349 11.5 3.82349C11.7712 3.82349 11.9912 4.04598 11.9912 4.3201V12.2658C11.9912 12.3978 11.9391 12.524 11.8478 12.6174L7.42737 17.0868C7.33109 17.1831 7.20538 17.2318 7.07963 17.2318C6.95388 17.2318 6.82817 17.1832 6.73189 17.0868C6.54034 16.8931 6.54034 16.5782 6.73189 16.3846Z" fill="#000240"></path>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="22.5932" height="22.8438" fill="white" transform="matrix(-1 0 0 1 22.7964 0.84375)"></rect>
+</clipPath>
+</defs>
+</symbol>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+<symbol id="checkmark" width="24" height="24" class="roadmap-icon me-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 6L9 17L4 12" stroke="#0FBA0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</symbol>
+</svg>
+<div class="container justify-content-center d-flex w-75 w-90-mobile">
+<div class="container roadmap-panel w-100-mobile">
+<h4 class="road-title">Q2</h4>
+<div class="road-line py-3"></div>
+<div class="card card-panel">
+<div class="card-body align-items-start">
+<div class="roadmap-entry mb-1">
+ <svg width="24" height="24" class="roadmap-icon me-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 6L9 17L4 12" stroke="#0FBA0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<h6 class="roadmap-entry-description">Concept & Contract Creation</h6>
+</div>
+<div class="roadmap-entry mb-1">
+<svg width="24" height="24" class="roadmap-icon me-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 6L9 17L4 12" stroke="#0FBA0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<h6 class="roadmap-entry-description">Presale with DxSale<br>and launch on Pancakeswap</h6>
+</div>
+<div class="roadmap-entry mb-1">
+<svg width="24" height="24" class="roadmap-icon me-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 6L9 17L4 12" stroke="#0FBA0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<h6 class="roadmap-entry-description">First Major redesign of our website</h6>
+</div>
+<div class="roadmap-entry mb-1">
+<svg width="24" height="24" class="roadmap-icon me-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 6L9 17L4 12" stroke="#0FBA0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<h6 class="roadmap-entry-description">
+<a class="roadmap-url" target="_blank" rel="noopener noreferrer" href="https://coinmarketcap.com/currencies/lottery-token">CoinMarketCap Listing</a>
+Listing
+</h6>
+</div>
+<div class="roadmap-entry mb-1">
+<svg width="24" height="24" class="roadmap-icon me-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 6L9 17L4 12" stroke="#0FBA0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<h6 class="roadmap-entry-description">
+<a class="roadmap-url" target="_blank" rel="noopener noreferrer" href="https://www.coingecko.com/en/coins/lottery-token">Coingecko Listing</a>
+Listing
+</h6>
+</div>
+<div class="roadmap-entry mb-1">
+<svg width="24" height="24" class="roadmap-icon me-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 6L9 17L4 12" stroke="#0FBA0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<h6 class="roadmap-entry-description">Youtuber Ad-Campaign</h6>
+</div>
+ <div class="roadmap-entry mb-1">
+<svg width="24" height="24" class="roadmap-icon me-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 6L9 17L4 12" stroke="#0FBA0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<h6 class="roadmap-entry-description">
+<a class="roadmap-url smoothscroll" href="#side-lotteries">First Side-Lottery<br>(Pineapple-Express)</a>
+</h6>
+</div>
+</div>
+</div>
+<div class="road-line py-3"></div>
+<h4 class="road-title">Q2</h4>
+<div class="road-line py-3"></div>
+<div class="card card-panel">
+<div class="card-body align-items-start">
+<div class="roadmap-entry mb-1">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+<use xlink:href="#checkmark" />
+</svg>
+<h6 class="roadmap-entry-description">Refreshed Website</h6>
+</div>
+<div class="roadmap-entry mb-1">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+<use xlink:href="#checkmark" />
+</svg>
+<h6 class="roadmap-entry-description">Ongoing Marketing Efforts</h6>
+</div>
+<div class="roadmap-entry mb-1">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+<use xlink:href="#checkmark" />
+</svg>
+<h6 class="roadmap-entry-description">Community Events</h6>
+</div>
+<div class="roadmap-entry mb-1">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+<use xlink:href="#checkmark" />
+</svg>
+<h6 class="roadmap-entry-description">
+<a class="roadmap-url smoothscroll" href="#side-lotteries">Brand new Scratchcard
+Game<br>(Multipla Madness)</a>
+</h6>
+</div>
+<div class="roadmap-entry mb-1">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+<use xlink:href="#clock" />
+</svg>
+<h6 class="roadmap-entry-description">Finished Litepaper</h6>
+</div>
+</div>
+</div>
+<div class="road-line py-3"></div>
+<h4 class="road-title">Q3</h4>
+<div class="road-line py-3"></div>
+<div class="card card-panel">
+<div class="card-body align-items-start">
+<div class="roadmap-entry mb-1">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+<use xlink:href="#clock" />
+</svg>
+<h6 class="roadmap-entry-description">Enhancing the Lottery Experience</h6>
+</div>
+<div class="roadmap-entry mb-1">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+<use xlink:href="#clock" />
+</svg>
+<h6 class="roadmap-entry-description">More Side-Lotteries (Expanding LOT)</h6>
+</div>
+<div class="roadmap-entry mb-1">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+<use xlink:href="#clock" />
+</svg>
+<h6 class="roadmap-entry-description">Lottery Events with huge Price-Pools</h6>
+</div>
+<div class="roadmap-entry mb-1">
+<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+<use xlink:href="#clock" />
+</svg>
+<h6 class="roadmap-entry-description">Expanding on other Blockchains</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="container pt-5">
+<div class="container w-75 w-100-mobile pt-5">
+<div class="section-border"></div>
+</div>
+</div>
+
+<section id="team">
+<div class="container section-content">
+<div class="container w-75 py-4 mb-1">
+<h1 class="section-title text-center py-5">Team</h1>
+</div>
+<div class="container w-75 w-100-mobile d-flex justify-content-center">
+<div class="container w-75 w-100-mobile d-flex flex-mobile">
+<div class="profile-card-2">
+<a href="https://t.me/auntedith" target="_blank" rel="noopener noreferrer">
+<img src="images/team/felix.png" class="img img-responsive" alt="Felix">
+<div class="profile-name">Felix</div>
+<div class="profile-username">@auntedith</div>
+<div class="profile-icons">
+<i class="fa fa-telegram"></i>
+</div>
+</a>
+</div>
+<div class="profile-card-2">
+<a href="https://t.me/lotterytokendev" class="stretched-link" target="_blank" rel="noopener noreferrer">
+<img src="images/team/tim.png" class="img img-responsive" alt="Tim">
+<div class="profile-name">Tim</div>
+<div class="profile-username">@lotterytokendev</div>
+<div class="profile-icons">
+<i class="fa fa-telegram"></i>
+</div>
+</a>
+</div>
+<div class="profile-card-2">
+<a href="https://t.me/lotteryjeff" target="_blank" rel="noopener noreferrer">
+<img src="images/team/jeffrey.png" class="img img-responsive" alt="Jeffrey (Host)">
+<div class="profile-name">Jeffrey</div>
+<div class="profile-username">@lotteryjeff</div>
+<div class="profile-icons">
+<i class="fa fa-telegram"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="container pt-5">
+<div class="container w-75 w-100-mobile pt-5">
+</div>
+</div>
+
+<footer>
+<div class="container-fluid footer-bar">
+<p class="disclaimer py-3">Disclaimer</p>
+</div>
+<div class="container-fluid d-flex flex-column align-items-center justify-center mx-0">
+<div class="container-fluid d-flex align-items-center justify-content-between flex-mobile pt-4 pb-3">
+<div class="footer-img">
+<img class="thanos" src="images/neon_ticket.png" alt="Glowing Drum">
+</div>
+<div class="footer-block w-50">
+<p class="footer-info">
+The Content shared on this website is for information purpose only and, thus, should not be
+considered as financial advice.
+Trading/Investing is risky and you should never invest more than you can afford to lose.
+You alone assume the sole responsibility of evaluating the merits and risks associated with the use
+of any information or
+other Content on the Site before making any decisions based on such information or other Content.
+</p>
+</div>
+<div class="footer-img">
+<img src="images/neon_bag.png" alt="Glowing Ticket">
+</div>
+</div>
+<span class="copyright pb-4">LotteryToken © 2021</span>
+</footer>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6b1156944be04ec8',m:'NuAXNDHNHZ1VeAU7HQdmhVCDjnZYE6Amndl9Rl5G9wc-1637407742-0-AX0FQ6FXoLemEOZAu+svTYS6kVUgxf2416ofe1H4b40CDBCdkNq7AWAsKqNh8BLPwcI8jd8mTgxu30eedf1J4BVof/yj5LkmAPWAV8j8oUk+2mYoA4pMorAdDQaK95SLrQ==',s:[0x800961c37b,0xbc7eb5520e],}})();</script></body>
+</html>
